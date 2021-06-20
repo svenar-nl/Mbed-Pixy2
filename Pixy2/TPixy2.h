@@ -63,9 +63,8 @@
 struct Version {
   void print() {
     char buf[64];
-    sprintf(buf, "hardware ver: 0x%x firmware ver: %d.%d.%d %s", hardware,
-            firmwareMajor, firmwareMinor, firmwareBuild, firmwareType);
-    printf(buf);
+    printf("hardware ver: 0x%x firmware ver: %d.%d.%d %s", hardware,
+           firmwareMajor, firmwareMinor, firmwareBuild, firmwareType);
   }
 
   uint16_t hardware;
